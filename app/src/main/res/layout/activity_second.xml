@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BFA995"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,5 +15,35 @@
         android:textSize="30dp"
         android:layout_centerHorizontal="true"/>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:drawable/toast_frame"
+        android:text="Add new fragment" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Add"
+        android:layout_alignLeft="@+id/add"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-94dp"
+        android:layout_marginTop="-48dp"
+        android:layout_marginBottom="410dp"
+        android:background="@android:drawable/toast_frame"
+        android:text="Back" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/add"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="-94dp"
+        android:background="@android:drawable/toast_frame"
+        android:text="EXIT" />
 </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
